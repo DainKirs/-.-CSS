@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+<head>
+
+
+
+<title>CSS lab</title>
+
+</head>
+
+
+
+<body>
+<div class="text">
+<h1>Капибары</h1>
+
+<p>Капибара (или водосвинка) — полуводное травоядное млекопитающее из подсемейства водосвинковых (Hydrochoerinae).
+  Один из двух ныне существующих видов рода водосвинки.
+  Капибара — самый крупный среди современных грызунов.
+  Длина тела взрослой капибары достигает 1–1,35 м, высота в холке — 50–60 см.
+  Капибара встречается по берегам разнообразных водоёмов в тропических и умеренных частях Центральной и Южной Америки.
+  Ведёт полуводный образ жизни; от воды редко удаляется более чем на 500–1000 м.
+  Питается плодами и клубнями, сеном и травой, водными растениями.</p></div>
+<nav>
+    <ul>
+      <li><a href="#">О капибарах</a></li>
+      <li><a href="#">Места обитания капибар</a></li>
+      <li><a href="#">Интересные факты о капибарах</a></li>
+      <li><a href="#">Справочная информация</a></li>
+
+    </ul>
+    <div class="text">
+    <img src="images/capibara.jpg">
+  </nav>
+  <div>
+</body>
+<style>body{
+  margin-left: 0%;
+  margin-right: 0%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: rgb(159, 204, 243);
+  text-align: center;
+  text-shadow: 1px 0 rgb(185, 182, 182);
+  font-size: larger;
+}
+nav ul {
+  list-style: none;
+  padding: 5px;
+  margin: 30px;
+  width: 90%;
+  height: 5%;
+  display: flex;
+  background-color: rgb(255, 9, 9);
+  border-radius: 40px;
+  font-family:'Times New Roman', Times, serif; 
+}
+
+
+nav ul li {
+  margin: 0 10px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #f3f3f3;
+  text-shadow: 1px 0 rgb(0, 0, 0);
+}
+
+img{
+  margin: 40px;
+  height: 60%;
+  width: 60%;
+  border: 6px;
+  border-radius: 40px;
+  border-style: dashed;
+  border-color: rgb(255, 0, 0);
+  -webkit-transition:
+    width 0.4ss,
+    height 0.4s2s,
+    background-color 0.4ss,
+    -webkit-transform 0.4ss;
+  transition:
+    width 0.4s,
+    height 0.4s,
+    background-color 0.4s,
+    transform 0.4s;
+animation: slide-in 1s ease-in-out;
+  
+}
+img:hover{
+  margin: 80px;
+  width: 65%;
+  height: 65%;
+  -webkit-transform: zoom-out(180deg);
+  transform: zoom-out(180deg);
+}
+.text {margin-right: 10%;
+  margin-left: 10%;}
+  </style>
+
+</html>

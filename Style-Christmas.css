@@ -1,0 +1,484 @@
+/*Стиль "Новогодний"*/
+html {
+    height: 100%;
+  }
+  
+  
+  ul {
+    list-style-image: url(Images/ball.png);
+    display: table;
+    margin: left;
+    justify-content: left;
+  }
+  a {
+    color: #ff0000;
+    text-shadow:
+    0.1px 0 rgba(255, 255, 255, 0.351),
+       0 -1px rgb(255, 255, 255, 0.351),
+       -1px 0 rgb(255, 255, 255, 0.351),
+       0 0.1px rgb(255, 255, 255, 0.351);
+       font-weight: bolder;
+  }
+  a:visited {
+    color: #ff0000;
+    text-shadow:
+    0.1px 0 rgba(255, 255, 255, 0.351),
+    0 -1px rgb(255, 255, 255, 0.351),
+    -1px 0 rgb(255, 255, 255, 0.351),
+    0 0.1px rgb(255, 255, 255, 0.351);
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+  
+  a:focus {
+    border-bottom: 10px solid;
+    background: #f00d0d;
+    
+  }
+  
+  a:hover {
+    border-bottom: 1px solid;
+    border-radius: 40px 40px 40px 40px;
+    background: linear-gradient(to right, rgb(253, 151, 125), rgb(8, 243, 212) 50%, rrgb(5, 116, 221));
+    cursor: pointer;
+  }
+  
+  a:active {
+    background: #f37813;
+    color: #f13636;
+  }
+  hr {
+    display: block;
+    height: 10px;
+    border: 0;
+    border-top: 2px solid #000000;
+    animation: fadeIn 0.01s ease-in-out forwards;
+ 
+  }
+  
+
+  body {
+  
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    font-size: 25px;
+    font-style: italic;
+    
+    color: #ffffff;
+    
+    margin: 0;
+    
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 0%;
+  
+  
+    text-shadow:
+       3px 0 rgb(53, 52, 52),
+          0 -1px rgb(53, 52, 52),
+          -1px 0 rgb(53, 52, 52),
+          0 3px rgb(53, 52, 52);
+  
+
+    background-image: url(Images/christmas.gif);
+  
+    background-attachment: fixed;
+    
+    -webkit-background-size: cover;
+background-size: cover;
+opacity: 0;
+  animation: fadeIn 0.2s ease-in-out forwards;
+}
+.content{
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-right: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #00000093;
+  border-radius: 10%;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  
+    h1 {
+    
+    text-align: center;
+    
+    font-size: 50px;
+    
+    margin: 20px;
+    
+    }
+    
+    
+    h2 {
+    
+      text-align: center;
+      
+      font-size: 55px;
+      
+      margin: 20px;
+      
+      }
+    p {
+    
+    text-align: justify;
+  
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 10px;
+    
+    }
+  
+    #showPanel{
+      margin-left: 93% ;
+      background: url(Images/b_ball.png) no-repeat center / contain; 
+      border-radius: 100%;
+      width: 40px;
+      height: 40px;
+      border: 0px;
+    }
+    .panel {
+      z-index: 9999;
+      right: 0;
+      display: none;
+      position: absolute;
+      background: url(Images/newyear.jpg);
+      padding: 15px;
+      border: 1px solid #ff1504;
+      border-radius: 20px;
+      width: 50%;
+      height: 75%;
+      animation: slideDown 0.4s forwards;
+  }
+  @keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(40px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(-40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+   
+  .header {
+    
+    background-image: url(Images/header-dark.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(240, 219, 28);
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-bottom: 2%;
+    
+  }
+  
+  .header-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    
+  }
+  .header p {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    font-family: monotype corsiva;
+    font-weight: bolder;
+    
+  }
+
+button{
+  display: table;
+  margin: 10px;
+  background:linear-gradient(to right, rgb(252, 0, 0), rgb(236, 121, 13) 50%, rgb(2, 112, 255));
+  color: #0d0c05;
+  text-shadow: #0d0c05;
+  width: 35%;
+  height: 6vh ;
+  font-family:Bradley Hand, cursive;
+  border-radius: 20px 20px 20px 20px;
+  cursor:pointer
+}
+    
+
+  
+.demo{ 
+  table-layout: fixed;
+  width: 40%;
+  display:inline-table;
+  color: rgba(255, 255, 255, 0.771);
+  border: 10px double rgba(255, 0, 0, 0.771);
+  border-radius:30px 30px 30px 30px ;
+  text-shadow: 6px 0 rgb(0, 0, 0),
+
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border: 9px inset rgba(255, 0, 0, 0.89);
+  border-radius: 5%;
+}
+
+
+
+th,
+td {
+  padding: 20px;
+  border: 4px inset rgba(255, 0, 0, 0.944);
+  border-radius: 5%;
+}
+iframe {
+  border: 6px inset rgba(255, 0, 0, 0.944);
+  border-radius: 10%;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  position: static;
+  width: 60%;
+  height: 80vh;
+  top: 50%;
+  left: 50%;
+
+  
+}
+textarea {
+  border: 8px double rgba(255, 0, 0, 0.944);
+  border-radius: 7%;
+  margin-left: 25%;
+  width: 50%;
+  height: 60vh;
+  margin-bottom: 6px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+textarea:focus {
+  border-color: rgb(245, 1, 1);
+}
+
+
+
+b {
+  font-size: larger;
+}
+input[type='radio'] {
+  accent-color: #eb0707;
+}
+figcaption{
+  text-align: center;
+  padding-top: 7px;
+}
+figure img{
+  border: 6px inset rgba(255, 0, 0, 0.944);
+  border-radius: 10%;
+  display: block;
+  margin: auto;
+  position: static;
+  width: 40%;
+  height: 40%;
+  top: 50%;
+  left: 50%;
+  cursor: zoom-in;
+}
+figure img:focus {
+  position: fixed;
+  height: auto;
+    width: auto;
+  top: 50%;
+  left: 50%;
+  z-index: auto;
+  max-width: 100%;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-user-select: none; user-select: none;
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+.title-logo img{
+  width: 20%;
+  height: 50%;
+  display: inline;
+  margin-left: 40%;
+  margin-bottom: 3%;
+  margin-top: 3%;
+
+}
+
+
+
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: url(Images/santa.jpg);
+  background-attachment: fixed;
+    
+    -webkit-background-size: cover;
+background-size: cover;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: rgb(255, 30, 0);
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 8s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+
+
+
+
+.btn-up {
+  /* фиксированное позиционирование */
+  position: fixed;
+  /* цвет фона */
+  background-color: #db380786;
+  /* расстояние от правого края окна браузера */
+  right: 20px;
+  /* расстояние от нижнего края окна браузера */
+  bottom: 0;
+  /* скругление верхнего левого угла */
+  border-top-left-radius: 8px;
+  /* скругление верхнего правого угла */
+  border-top-right-radius: 8px;
+  /* вид курсора */
+  cursor: pointer;
+  /* отображение элемента как flex */
+  display: flex;
+  /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+  align-items: center;
+  /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+  justify-content: center;
+  /* ширина элемента */
+  width: 60px;
+  /* высота элемента */
+  height: 50px;
+}
+
+.btn-up::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  background-image:url(Images/up.png)
+}
+
+.btn-up_hide {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color: #ee5b06b1; /* цвет заднего фона при наведении */
+  }
+}
+.books{
+  
+  margin: auto;
+  position: static;
+  width: 30%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  cursor: zoom-in;
+  
+}
+.books:focus {
+  position: fixed;
+  height: auto;
+    width: auto;
+  top: 50%;
+  left: 50%;
+  z-index: auto;
+  max-width: 100%;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-user-select: none; user-select: none;
+  animation: fadeIn 0.1s ease-in-out forwards;
+  
+
+}

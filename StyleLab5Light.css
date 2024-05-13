@@ -1,0 +1,25 @@
+body {
+background-color: rgb(194, 231, 145);
+text-align: center;
+transition: all 1s ease;
+}
+img {
+    width : 30%;
+    height : 30%;
+    padding : 5px;
+    position :relative; 
+    border: 10px;
+    border-style: groove;
+    border-color: rgb(123, 247, 74);
+    transition: all 1s ease;
+
+}
+button{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: rgb(201, 236, 173);
+    color: rgb(26, 25, 25);
+    height: 40px;
+    width: 300px;
+    transition: all 1s ease;
+}

@@ -1,0 +1,476 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    background-color: #2f302f;
+    color: #e9e9e9;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 4%;
+    padding-top: 0%;
+    text-align: justify;
+  }
+  .content{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    border-radius: 30px;
+    background-color: #00000051;
+  }
+  
+  .header {
+    
+    background-image: url(Images/header-dark.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(240, 219, 28);
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-bottom: 2%;
+    
+  }
+  
+  .header-content {
+    background-color: rgba(255, 255, 255, 0.5);
+    
+    
+  }
+  .header p {
+    font-size: 50px;
+    text-shadow: 1px 1px 1px #000;
+    font-family: monotype corsiva;
+    font-weight: bolder;
+    
+  }
+ 
+  #showPanel{
+    margin-left: 93% ;
+    background: url(Images/theme-icon.png) no-repeat center / contain; 
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    
+  }
+  .panel {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #2c2c29a9;
+    padding: 15px;
+    border: 1px solid #fffb04;
+    border-radius: 20px;
+    animation: slideDown 0.4s forwards;
+    width: 80%;
+  }
+  @keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+  h1 {
+    color: #e7fc2a;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  h2{
+    color: #e7fc2a;
+    font-size: 50px;
+    text-align: left;
+  }
+  hr {
+    border: 0;
+    border-top: 1px solid #caeb0e;
+   
+ 
+  }
+  p {
+    line-height: 1.6;
+    font-size: 20px;
+   
+  }
+  #result{
+    line-height: 1.6;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  b{
+    text-decoration: underline;
+    color: #eaea14;
+    
+  }
+  ul {
+    list-style-type: decimal;
+     
+  }
+  
+  a {
+    color: #dbde13;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.288);
+    transition: .5s;
+     
+
+      }
+      a:visited {
+        color: #c9df0a;
+         
+      }
+      a::before{
+        background: #f2fa1b;
+    transition: .5s;
+    transform: scale(.9);
+      }
+      
+      a:focus {
+        
+        background: #8eb70555;
+        border-radius: 5px;
+         
+      }
+      
+      a:hover::before {
+        cursor: pointer;
+        transform: scale(1.1);
+        
+
+         
+      }
+      a:hover{
+        
+        text-shadow: 0 0 9px #c4e50d;
+      }
+      
+      a:active {
+        background: #a2de09ab;
+        color: #b0bc1255;
+        
+      }
+  
+ 
+  ol{
+    font-size: 20px;
+    line-height: 30px;
+     
+  }
+  td,th {
+    border-style: groove;
+    border-color: #ffffff;
+    color:rgb(255, 255, 255) ;
+    border-radius: 5px;
+    text-align: center;
+     
+  }
+  .demo{
+    border-style: groove;
+    border-color: #c9e60f;
+    border-radius: 5px;
+    table-layout: fixed;
+    width: 40%;
+    display:inline-table;
+     
+
+  }
+  .demo p{
+    padding-left: 8px;
+    padding-top: 2px;
+    padding-bottom: 4px;
+     
+  }
+  
+  button {
+    display: table;
+    background-color: #e5ff00;
+    color: #000000;
+    padding: 10px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+     
+  }
+  
+  button:hover {
+    background-color: #e5ff00;
+    box-shadow: 0 0 30px #d0eb02;
+     
+  }
+
+  .theme-changer button{
+    display: inline;
+    background-color: #e5ff00;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+     
+
+  }
+  .theme-changer button:hover{
+    background-color: #e5ff00;
+    box-shadow: 0 0 30px #d0eb02;
+     
+  }
+  
+  textarea {
+    height: 60vh;
+    width: 40%;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    resize: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     
+  }
+  
+  textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 2px 5px rgba(52, 152, 219, 0.5);
+     
+  }
+  
+  figure img{
+    margin: auto;
+    position: static;
+    border-radius: 15px;
+    width: 40%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    cursor: zoom-in;
+     
+  }
+  figure img:focus {
+    position: fixed;
+    height: auto;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    z-index: auto;
+    max-width: 100%;
+    max-height: 100%;
+    outline: none;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-user-select: none; user-select: none;
+    animation: fadeIn 0.1s ease-in-out forwards;
+     
+  }
+  .title-logo img{
+    width: 20%;
+    height: 50%;
+    display: inline;
+    margin-left: 40%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+  
+  }
+  figcaption{
+    padding-top: 12px;
+     
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  iframe{
+    width: 60%;
+    height: 70vh;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+     
+  }
+  input[type='radio'] {
+    accent-color: #007bff;
+     
+  }
+  .style-area li {
+    transition: all 1s ease;
+  }
+  .style-area hr{
+    transition: all 1s ease;
+  }
+  .style-area h1 {
+    transition: all 1s ease;
+  }
+  .style-area p {
+    transition: all 1s ease;
+  }
+  .style-area button {
+    transition: all 1s ease;
+  }
+  body.style{transition: all 1s ease;}
+
+
+  .preloader {
+    /*фиксированное позиционирование*/
+    position: fixed;
+    /* координаты положения */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* фоновый цвет элемента */
+    background: #202020;
+    /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+    z-index: 1001;
+  }
+  
+  .preloader__row {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+  }
+  
+  .preloader__item {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background-color: #d6d308;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px;
+    animation: preloader-bounce 2s infinite ease-in-out;
+  }
+  
+  .preloader__item:last-child {
+    top: auto;
+    bottom: 0;
+    animation-delay: -1s;
+  }
+  
+  @keyframes preloader-rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes preloader-bounce {
+  
+    0%,
+    100% {
+      transform: scale(0);
+    }
+  
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  .loaded_hiding .preloader {
+    transition: 8s opacity;
+    opacity: 0;
+  }
+  
+  .loaded .preloader {
+    display: none;
+  }
+ 
+
+  
+
+
+
+  .btn-up {
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    background-color: #343535;
+    /* расстояние от правого края окна браузера */
+    right: 20px;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 0;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 60px;
+    /* высота элемента */
+    height: 50px;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image:url(Images/up.png)
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color: #6e6e6e6e; /* цвет заднего фона при наведении */
+      box-shadow: 0 0 9px #c4e50d;
+      
+    }
+  }
+  .books{
+  
+    margin: auto;
+    position: static;
+    width: 30%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    cursor: zoom-in;
+    
+  }
+  .books:focus {
+    position: fixed;
+    height: auto;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    z-index: auto;
+    max-width: 100%;
+    max-height: 100%;
+    outline: none;
+    pointer-events: none;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-user-select: none; user-select: none;
+    animation: fadeIn 0.1s ease-in-out forwards;
+    
+  
+  }

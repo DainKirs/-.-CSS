@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+
+<head>
+
+<title>Анимированный текст</title>
+
+<style>
+  .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; 
+      align-items: center; 
+      width: 500px;
+      margin-bottom: 4px; 
+      margin-left: 25%;
+      
+    }
+    
+    .image-container img {
+      width: 50%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      transition: transform 0.5s ease;
+      border-radius: 30px;
+      
+  }
+    
+    
+    .image-container:hover img {
+      transform:scale(1.4);
+    }
+    
+    body{
+      background-color:rgb(125, 230, 101) ;
+      padding-top: 5%;
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: x-large;
+  }</style>
+</head>
+
+<body>
+
+<h1>Живая галерея</h1>
+<hr></hr>
+  <div class="image-container">
+    <img src="Images/owl.jpg" alt="Your Image">   
+  </div>
+
+  <div class="image-container">
+  
+    <img src="Images/fish.jpg" alt="Your Image">
+
+  </div>
+
+  <div class="image-container">
+    
+    <img src="Images/duck.jpg" alt="Your Image">
+
+  </div>
+
+  <div class="image-container">
+    <img src="Images/monkey.jpg" alt="Your Image">
+  </div>
+
+
+  <div class="image-container">
+
+    <img src="Images/silkworm.jpg" alt="Your Image">
+
+  </div>
+
+  <div class="image-container">
+
+    <img src="Images/butterfly.jpg" alt="Your Image">
+
+  </div>
+</body>
+</html>
+

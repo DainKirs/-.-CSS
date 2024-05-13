@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="styleLink" rel="stylesheet" type="text/css" href="Style-Classic.css">
+  <link rel="shortcut icon" type="image/x-icon" href="Images/title-logo.png" />
+    <script src="script.js"></script>
+  <title>Гармония стилей. Учебное пособие по CSS</title>
+ </head>
+ <body>
+  <button id="showPanel" title="Смена стиля"></button>
+  <div id="panel" class="panel">
+    <p>Выберите стиль</p>
+    <div class="theme-changer">
+    <button onclick="changeStyle('Style-Classic.css')">Стиль "Классический" (Светлый)</button>
+    <button onclick="changeStyle('Style-Dark.css')">Стиль "Классический" (Темный)</button>
+    <button onclick="changeStyle('Style-sun-and-moon.css')">Стиль "Солнце и луна"</button>
+    <button onclick="changeStyle('Style-matrix.css')">Стиль "Матрица"</button>
+    <button onclick="changeStyle('Style-Japan.css')">Стиль "Япония"</button>
+    <button onclick="changeStyle('Style-cartoon.css')">Стиль "Мультфильм"</button>
+    <button onclick="changeStyle('Style-Pixel.css')">Стиль "Пиксели"</button>
+    <button onclick="changeStyle('Style-Christmas.css')">Стиль "Новогодний"</button>
+    </div>
+  </div>
+  <script>
+  const button = document.getElementById('showPanel');
+    const panel = document.getElementById('panel');
+    
+    button.addEventListener('click', () => {
+        if (panel.style.display === 'none') {
+            panel.style.display = 'block';
+        } else {
+            panel.style.display = 'none';
+        }
+    });</script>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+  <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+  <div class="content">
+  <h2>Гармония стилей. Учебное пособие по CSS</h2>
+  <hr>
+  <h1> Навигация по сайту </h1>
+  <nav>
+    <ul>
+      <li><a href="Page 0.html">Главная</a></li>
+      <li><a href="Page 1. Intoduction.html">Введение в CSS </a></li>
+      <li><a href="Page 2. CSS Basics.html">Основы CSS</a></li>
+      <li><a href="Page 3. Lab 1.html">Практические задания  (Вы сейчас здесь)</a></li>
+      <li><a href="Page 9.Src.html">Полезные ресурсы и ссылки</a></li> 
+    </ul>
+  </nav>
+  <hr>
+  
+  <h1> Выберите практичекое задание </h1>
+  <nav>
+    <ul>
+      <li><a href="Page 3. Lab 1.html">Практическое Задание №1 Часть 1 </a></li>
+      <li><a href="Page 3-1.Lab1-2.html">Практическое Задание №1 Часть 2 (Вы сейчас здесь)</a></li>
+      <li><a href="Page 3-2.Lab1-3.html">Практическое Задание №1 Часть 3 </a></li>
+      <li><a href="Page 4. Lab 2.html">Практическое Задание №2</a></li>
+      <li><a href="Page 5. Lab 3.html">Практическое Задание №3 </a></li>
+      <li><a href="Page 6. Lab 4.html">Практическое Задание №4</a></li>
+      <li><a href="Page 7. Lab 5.html">Практическое Задание №5</a></li>
+    <hr>
+      <li><a href="Page 8. Test.html">Контрольные вопросы</a></li>
+    </ul>
+  </nav>
+  <hr>  
+<h1>Практическое Задание №1 Часть 2</h1>
+
+<p>Теперь вам предстоит создать градиентный фон на своей странице. Можете использовать, как уже готовую страницчку из прошлого задания, так и создать новую.</p>
+<p>Попробуйте сделать фон в виде градиента нескольких цветов. Используйте свойство <b>background: linear-gradient</b>, цвета прописывайте в кодровке HEX. так же сделайте так, чтобы фон не двигался при прокручивани страницы </p>
+<p>Теперь у вас получилось установить цветовой градиент на фон веб-страницы. Учтите, что вам возможно будет нужно отредактировать стиль текста, чтобы он был более читаемым на новом фоне, например можете добавить ему тень белого цвета или вовсе сменить цвет текста</p> 
+<iframe 
+src="Lab1.html"></iframe>  
+
+ <hr>
+ <h1>Рабочая область</h1>
+ <p>Далее представлена рабочая область. Вы можете выполнить практическое задание, не покидая пособия.<p>
+ <h1>Поле ввода html</h1>
+ <textarea id="htmlCode" rows="10" cols="50"></textarea>
+ 
+   <h1>Поле ввода css</h1>
+   <textarea id="cssCode" rows="10" cols="50"></textarea>
+ 
+   <button onclick="displayResult()">Вывести результат</button>
+ 
+   <h1>Результат</h1>
+   <div id="result"></div>
+<hr>
+ </div>
+</body>
+</html>
+

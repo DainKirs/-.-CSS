@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link id="styleLink" rel="stylesheet" type="text/css" href="Style-Classic.css">
+  <link rel="shortcut icon" type="image/x-icon" href="Images/title-logo.png" />
+    <script src="script.js"></script>
+  <title>Гармония стилей. Учебное пособие по CSS</title>
+ </head>
+ <body>
+    <button id="showPanel" title="Смена стиля"></button>
+    <div id="panel" class="panel">
+      <p>Выберите стиль</p>
+      <div class="theme-changer">
+      <button onclick="changeStyle('Style-Classic.css')">Стиль "Классический" (Светлый)</button>
+      <button onclick="changeStyle('Style-Dark.css')">Стиль "Классический" (Темный)</button>
+      <button onclick="changeStyle('Style-sun-and-moon.css')">Стиль "Солнце и луна"</button>
+      <button onclick="changeStyle('Style-matrix.css')">Стиль "Матрица"</button>
+      <button onclick="changeStyle('Style-Japan.css')">Стиль "Япония"</button>
+      <button onclick="changeStyle('Style-cartoon.css')">Стиль "Мультфильм"</button>
+      <button onclick="changeStyle('Style-Pixel.css')">Стиль "Пиксели"</button>
+      <button onclick="changeStyle('Style-Christmas.css')">Стиль "Новогодний"</button>
+      </div>
+    </div>
+    <script>
+    const button = document.getElementById('showPanel');
+      const panel = document.getElementById('panel');
+      
+      button.addEventListener('click', () => {
+          if (panel.style.display === 'none') {
+              panel.style.display = 'block';
+          } else {
+              panel.style.display = 'none';
+          }
+      });</script>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+      </div>
+      <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+      </script>
+      <div class="content">
+  <h2>Гармония стилей. Учебное пособие по CSS</h2>
+  <hr>
+  
+    <a href="Page 0.html">&lt;&lt;На главную</a>
+     
+ 
+  <hr>
+  
+  
+
+  
+<title>Тест</title>
+
+</head>
+<body>
+<h1>Контрольные вопросы</h1>
+<div id="test">
+	<div>
+		<p><b>Вопрос 1. В каком году выпустили первый полноценный стандарт CSS?</b></p>
+		
+		<label><p>
+			<input type="radio" name="1" data-right>
+			1. 1996</p>
+		</label>
+		<label><p>
+			<input type="radio" name="1">
+			2. 1994</p>
+		</label>
+		<label><p>
+			<input type="radio" name="1">
+			3. 1999</p>
+		</label>
+        <label><p>
+			<input type="radio" name="1">
+			4. 2001</p>
+		</label>
+	</div>
+	<div>
+		<p><b>Вопрос 2. Как зовут разработчика, предложившего идею каскадных таблиц стилей?</b></p>
+		
+		<label><p>
+			<input type="radio" name="2">
+			1. Тим Бернерс-Ли</p>
+		</label>
+		<label><p>
+			<input type="radio" name="2" data-right>
+			2. Хокон Виум-Ли</p>
+		</label>
+		<label><p>
+			<input type="radio" name="2">
+			3. Гвидо ван Россум</p>
+		</label>
+        <label><p>
+			<input type="radio" name="2">
+			4. Брендон Айком</p>
+		</label>
+	</div>
+	<div>
+		<p><b>Вопрос 3.Как привязать внешний CSS-файл к HTML-документу?</b></p>
+		<label><p>
+			<input type="radio" name="3">
+			1. &lt;css src="styles.css"&gt;</p>
+		</label>
+		<label><p>
+			<input type="radio" name="3">
+		    2. &lt;style src="styles.css"&gt;</p>
+		</label>
+		<label><p>
+			<input type="radio" name="3" data-right>
+			3.&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+		</label>
+        <label><p>
+			<input type="radio" name="3">
+			4. &lt;external-css href="styles.css"&gt;</p>
+		</label>
+	</div>
+
+<div>
+    <p><b>Вопрос 4.Что будет результатом применения свойства display: none; к элементу в CSS? </b></p>
+    <label><p>
+        <input type="radio" name="4" data-right>
+        1. Элемент будет полностью скрыт и не будет занимать место на странице</p>
+    </label>
+    <label><p>
+        <input type="radio" name="4">
+        2. Элемент будет показан, но его область отведения на странице будет пустой</p>
+    </label>
+    <label><p>
+        <input type="radio" name="4">
+        3. Элемент будет отображаться с прозрачностью</p>
+    </label>
+    <label><p>
+        <input type="radio" name="4">
+        4. Элемент будет сдвинут влево или вправо на странице </p>
+    </label>
+</div>
+<div>
+    <p><b>Вопрос 5. Как задать фоновое изображение для элемента в CSS? </b></p>
+    <label><p>
+        <input type="radio" name="5">
+        1. image-background: url('image.jpg')</p>
+    </label>
+    <label><p>
+        <input type="radio" name="5">
+        2.  background-image:('image.jpg')</p>
+    </label>
+    <label><p>
+        <input type="radio" name="5">
+        3. image-source: url('image.jpg')</p>
+    </label>
+    <label><p>
+        <input type="radio" name="5" data-right>
+        4. background-image: url('image.jpg')</p>
+    </label>
+</div>
+<div>
+    <p><b>Вопрос 6. Какой из следующих вариантов правильно задает красный цвет текста в CSS?</b></p>
+    <label><p>
+        <input type="radio" name="6">
+        1. text-color: red</p>
+    </label>
+    <label><p>
+        <input type="radio" name="6">
+        2. font-color: red</p>
+    </label>
+    <label><p>
+        <input type="radio" name="6" data-right>
+        3. color: red</p>
+    </label>
+    <label><p>
+        <input type="radio" name="6">
+        4. color-text: red</p>
+    </label>
+    </div>
+    <div>
+        <p><b>Вопрос 7.Какой из следующих вариантов правильно задает жирное начертание текста в CSS</b></p>
+        <label><p>
+            <input type="radio" name="7" data-right>
+            1.font-weight: bold</p>
+        </label>
+        <label><p>
+            <input type="radio" name="7">
+            2. text-style: bold</p>
+        </label>
+        <label><p>
+            <input type="radio" name="7">
+            3. font-style: bold</p>
+        </label>
+        <label><p>
+            <input type="radio" name="7">
+            4. style-weight: bold</p>
+        </label>
+    </div>
+    <div>
+        <p><b>Вопрос 8. Как задать цвет фона элемента в CSS? </b></p>
+        <label><p>
+            <input type="radio" name="8" data-right>
+            1. background-color: white</p>
+        </label>
+        <label><p>
+            <input type="radio" name="8">
+            2. element-background: white</p>
+        </label>
+        <label><p>
+            <input type="radio" name="8">
+            3. text-background: white</p>
+        </label>
+        <label><p>
+            <input type="radio" name="8">
+            4. background: white</p>
+        </label>
+    </div>
+    <div>
+        <p><b>Вопрос 9. В чем разница между padding и margin?</b></p>
+        <label><p>
+            <input type="radio" name="9">
+            1. Различий нет</p>
+        </label>
+        <label><p>
+            <input type="radio" name="9">
+            2.Различие в том, что margin помогает создать пространство вокруг элемента вне границы, в то время как padding помогает создать пространство как внутри, так и снаружи, в зависимости от дополнительных данных.</p>
+        </label>
+        <label><p>
+            <input type="radio" name="9" data-right>
+            3. Различие в том, что margin помогает создать пространство вокруг элемента вне границы, в то время как padding помогает создать пространство вокруг элемента внутри границы.</p>
+        </label>
+        <label><p>
+            <input type="radio" name="9">
+            4. Различие в том, что padding помогает создать пространство вокруг элемента вне границы, в то время как margin помогает создать пространство вокруг элемента внутри границы.</p>
+        </label>
+    </div>
+    <div>
+        <p><b>Вопрос 10. Какое свойство CSS будет устанавливать градиентный фон на элементе без использования изображения?</b></p>
+        <label><p>
+            <input type="radio" name="10">
+            1. background-image:url();</p>
+        </label>
+        <label><p>
+            <input type="radio" name="10" data-right>
+            2. background: linear-gradient();</p>
+        </label>
+        <label><p>
+            <input type="radio" name="10">
+            3. background-gradient();</p>
+        </label>
+        <label><p>
+            <input type="radio" name="10">
+            4. background-style-gradient();</p>
+        </label>
+    </div>
+
+
+<button onclick="checkResults()">Проверить результаты</button>
+<hr>
+<div id="result"></div>
+<script>
+function checkResults() {
+  let correctAnswers = document.querySelectorAll('input[data-right]:checked').length;
+  document.getElementById('result').innerText = 'Количество правильных ответов: ' + correctAnswers;
+}
+</script>
+
+
+</div>
+<div class="btn-up btn-up_hide"></div>
+<script class="up">const btnUp = {
+  el: document.querySelector('.btn-up'),
+  show() {
+    // удалим у кнопки класс btn-up_hide
+    this.el.classList.remove('btn-up_hide');
+  },
+  hide() {
+    // добавим к кнопке класс btn-up_hide
+    this.el.classList.add('btn-up_hide');
+  },
+  addEventListener() {
+    // при прокрутке содержимого страницы
+    window.addEventListener('scroll', () => {
+      // определяем величину прокрутки
+      const scrollY = window.scrollY || document.documentElement.scrollTop;
+      // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+      scrollY > 400 ? this.show() : this.hide();
+    });
+    // при нажатии на кнопку .btn-up
+    document.querySelector('.btn-up').onclick = () => {
+      // переместим в начало страницы
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  }
+}
+
+btnUp.addEventListener();</script>
+</body>
+</html>
+

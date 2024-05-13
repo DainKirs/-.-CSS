@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+
+<head>
+
+<title>Анимированный текст</title>
+
+<style>body{
+    background-color: rgb(189, 219, 219);
+}
+
+
+@keyframes move {
+
+    0% {
+    
+    transform: translateX(0);
+    
+    }
+    
+    50% {
+    
+    transform: translateX(100px);
+    
+    }
+    
+    100% {
+    
+    transform: translateX(0);
+    
+    }
+    
+    }
+    
+    @keyframes blink {
+    
+    0% {
+    
+    opacity: 1;
+    
+    }
+    
+    50% {
+    
+    opacity: 0;
+    
+    }
+    
+    100% {
+    
+    opacity: 1;
+    
+    }
+    
+    }
+    
+    @keyframes color-change {
+    
+    0% {
+    
+    color: red;
+    
+    }
+    
+    50% {
+    
+    color: blue;
+    
+    }
+    
+    100% {
+    
+    color: green;
+    
+    }
+    
+    }
+    
+    .animated-text {
+    
+    animation: move 4s forwards infinite;}
+    .blink-text{
+    animation: blink 2s linear infinite; }
+    .color-text{
+    animation: color-change 3s linear infinite;}
+    .full-text{ 
+     animation:move 4s forwards infinite, blink 2s linear infinite, color-change 3s linear infinite;   
+    }
+    
+    
+    </style>
+
+</head>
+
+<body>
+
+<h1 class="animated-text">Данный текст может двигаться по экрану!</h1>
+<h1 class="blink-text">А этот текст мерцает!</h1>
+<h1 class="color-text">Ну а этот текст меняет цвет!</h1>
+<h1 class="full-text">Ну а данный текст имеет все вышеперечисленные свойства!</h1>
+</body>
+
+</html>

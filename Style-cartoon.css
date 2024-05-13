@@ -1,0 +1,576 @@
+/*Стиль "Мультяшный"*/
+html {
+    height: 100%;
+  }
+  
+  ul {
+   list-style-image: url(Images/list-for-cartoon.png);
+    list-style-position:inherit;
+    display: table;
+    margin: left;
+    justify-content: left;
+    background-color: #ffffffbd;
+    border-radius: 40px 40px 40px 40px;
+    animation: slide-in 1s ease-in-out;
+    padding-left: 40px;
+    padding-right: 20px;
+    
+   
+    
+  }
+  #showPanel{
+    margin-left: 93% ;
+    background: url(Images/theme-icon.png) no-repeat center / contain; 
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    
+    
+  }
+  .panel {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: #5daad6b4;
+    padding: 15px;
+    border: 1px solid #fcfcfc;
+    border-radius: 20px;
+    width: 60%;
+    
+    animation: slideDown 0.4s forwards;
+  }
+  @keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  .header {
+    
+    background-image: url(Images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin-bottom: 2%;
+    
+  }
+  .header-content {
+    background-color: rgba(17, 16, 16, 0.5);
+    padding: 20px;
+    
+  }
+  .header p {
+    font-size: 50px;
+    text-shadow: 1px 1px 1px #000;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    text-decoration: none;
+    background-color: #00000000;
+  }
+  
+  .content{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: justify;
+  }
+  
+  a {
+    color: #09b7e2;
+    text-shadow:
+       1px 0 rgb(0, 0, 0),
+          0 -1px rgb(0, 0, 0),
+          -1px 0 rgb(0, 0, 0),
+          0 1px rgb(0, 0, 0);
+          
+  }
+  a:visited {
+    color: #09b7e2;
+    text-shadow:
+       1px 0 rgb(0, 0, 0),
+          0 -1px rgb(0, 0, 0),
+          -1px 0 rgb(0, 0, 0),
+          0 1px rgb(0, 0, 0);
+  }
+  
+  a:focus {
+    border-bottom: 10px solid;
+    background: #09b7e2;
+   
+  }
+  
+  a:hover {
+    border-bottom: 1px solid;
+    cursor: pointer;
+    
+    
+  }
+  
+  a:active {
+   
+    color: #09b7e2;
+  }
+  hr {
+    display: block;
+    height: 1px;
+    border: 1;
+    border-top: 1px solid #ffffff;
+    margin: 1em 0;
+   
+  }
+  
+  body {
+  
+    font: italic small-caps bold 16px/2 cursive;
+    font-size: x-large;
+    text-decoration: solid;
+    color: #000000;
+    margin: 10;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 0px;
+    background-image: url(Images/mouse.png), url(Images/dont-know.png), url(Images/cartoon-sky.jpg);
+    background-position: right bottom, left bottom, left top;
+    background-repeat: no-repeat, no-repeat, repeat;
+    background-attachment: fixed;
+    padding-left: 0%;
+    padding-right: 0%;
+    opacity: 0;
+    animation: fadeIn 0.2s ease-in-out forwards;
+}
+background-image {
+  -webkit-transition:
+  width 0.4ss,
+  height 0.4s2s,
+  background-color 0.4ss,
+  -webkit-transform 0.4ss;
+ 
+transition:
+  width 0.4s,
+  height 0.4s,
+  background-color 0.4s,
+  transform 0.4s;
+  animation: slide-in 1s ease-in-out;
+}
+background-image:hover {
+
+  width: 70%;
+  height: 70%;
+  -webkit-transform: zoom-out(180deg);
+  transform: zoom-out(180deg);
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+p {
+  background-color: #ffffffbd;
+  border-radius: 40px 40px 40px 40px;
+  animation: slide-in 1s ease-in-out;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+b { background-color: #ffffffbd;
+  border-radius: 40px 40px 40px 40px;
+  animation: slide-in 1s ease-in-out;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: larger;
+ 
+
+}
+textarea{
+    width: 60%;
+    height: 60vh;
+    border-radius: 40px 40px 40px 40px;
+    -webkit-transition:
+      width 0.4ss,
+      height 0.4s2s,
+      background-color 0.4ss,
+      -webkit-transform 0.4ss;
+    transition:
+      width 0.4s,
+      height 0.4s,
+      background-color 0.4s,
+      transform 0.4s;
+      animation: slide-in 1s ease-in-out;
+    
+}
+textarea:hover {
+    width: 70%;
+    height: 70vh;
+    -webkit-transform: zoom-out(180deg);
+    transform: zoom-out(180deg);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold; 
+   
+}
+textarea:focus {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+iframe{
+  margin: 25px;
+    width: 60%;
+    height: 60vh;
+    border-radius: 40px 40px 40px 40px;
+    -webkit-transition:
+      width 0.4ss,
+      height 0.4s2s,
+      background-color 0.4ss,
+      -webkit-transform 0.4ss;
+    transition:
+      width 0.4s,
+      height 0.4s,
+      background-color 0.4s,
+      transform 0.4s;
+  animation: slide-in 1s ease-in-out;
+  
+}
+iframe:hover{
+    width: 70%;
+    height: 70vh;
+    -webkit-transform: zoom-out(180deg);
+    transform: zoom-out(180deg);
+    margin: 25px;
+   
+
+}
+button {
+    font: italic small-caps bold 16px/2 cursive;
+    font-size: xx-large;
+    background-color: #ffffffbd;
+    border-radius: 40px 40px 40px 40px;
+    display: block;
+    position: relative;
+    margin-left: 5%;
+    width: 70%;
+    height: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: slide-in 1s ease-in-out;
+   
+    -webkit-transition:
+      width 0.4ss,
+      height 0.4s2s,
+      background-color 0.4ss,
+      -webkit-transform 0.4ss;
+    transition:
+      width 0.4s,
+      height 0.4s,
+      background-color 0.4s,
+      transform 0.4s;
+      
+}
+button:hover{
+    width: 75%;
+    height: 15%;
+    -webkit-transform: zoom-out(180deg);
+    transform: zoom-out(180deg);
+    
+}
+
+ol{
+  background-color: #ffffffbd;
+  border-radius: 40px 40px 40px 40px;
+  animation: slide-in 1s ease-in-out;
+  padding-left: 60px;
+  padding-right: 20px;
+
+}
+
+td {
+  padding: 20px;
+  border: 12px inset #e9098fe3;
+  border-radius: 40px 40px 40px 40px ;
+  animation: slide-in 1s ease-in-out;
+  
+}
+th {
+  padding: 20px;
+  border: 12px inset #06f562cb;
+  border-radius: 40px 40px 40px 40px ;
+  animation: slide-in 1s ease-in-out;
+ 
+}
+h1 {
+  background-color: #ffffffbd;
+  border-radius: 40px 40px 40px 40px;
+  animation: slide-in 1s ease-in-out;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+h2 {
+  background-color: #ffffffbd;
+  border-radius: 40px 40px 40px 40px;
+  animation: slide-in 1s ease-in-out;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 50px;
+  
+  
+}
+input[type='radio'] {
+  accent-color: #13acb9;
+}
+figure img{
+  width: 40%;
+    height: 40%;
+    border-radius: 40px 40px 40px 40px;
+    -webkit-transition:
+      width 0.4ss,
+      height 0.4s2s,
+      background-color 0.4ss,
+      -webkit-transform 0.4ss;
+    transition:
+      width 0.4s,
+      height 0.4s,
+      background-color 0.4s,
+      transform 0.4s;
+  animation: slide-in 1s ease-in-out;
+ cursor: zoom-in;
+}
+figure img:hover {
+  height: auto;
+    width: auto;
+    -webkit-transform: zoom-out(180deg);
+    transform: zoom-out(180deg);
+}
+
+
+figure img:focus {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: auto;
+  max-width: 100%;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-user-select: none; user-select: none;
+  height: 60%;
+  width: 55%;
+}
+figcaption{
+  padding-top: 7px;
+}
+.title-logo img{
+  width: 20%;
+  height: 50%;
+  display: block;
+  margin: auto;
+  -webkit-transition:
+  width 0.4ss,
+  height 0.4s2s,
+  background-color 0.4ss,
+  -webkit-transform 0.4ss;
+transition:
+  width 0.4s,
+  height 0.4s,
+  background-color 0.4s,
+  transform 0.4s;
+  animation: slide-in 1s ease-in-out;
+}
+.title-logo img:hover{
+  width: 35%;
+  height: 90%;
+  -webkit-transform: zoom-out(180deg);
+  transform: zoom-out(180deg);
+}
+
+.style-area li {
+  transition: all 1s ease;
+}
+.style-area hr{
+  transition: all 1s ease;
+}
+.style-area h1 {
+  transition: all 1s ease;
+}
+.style-area p {
+  transition: all 1s ease;
+}
+.style-area button {
+  transition: all 1s ease;
+}
+body.style{transition: all 1s ease;}
+
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #afe4e6;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 1s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #6db2eb;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 8s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+.btn-up {
+  /* фиксированное позиционирование */
+  position: fixed;
+  /* цвет фона */
+  background-color: #ffffff;
+  /* расстояние от правого края окна браузера */
+  right: 20px;
+  /* расстояние от нижнего края окна браузера */
+  bottom: 0;
+  /* скругление верхнего левого угла */
+  border-top-left-radius: 8px;
+  /* скругление верхнего правого угла */
+  border-top-right-radius: 8px;
+  /* вид курсора */
+  cursor: pointer;
+  /* отображение элемента как flex */
+  display: flex;
+  /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+  align-items: center;
+  /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+  justify-content: center;
+  /* ширина элемента */
+  width: 60px;
+  /* высота элемента */
+  height: 50px;
+}
+
+.btn-up::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+  background-image:url(Images/up.png)
+}
+
+.btn-up_hide {
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn-up:hover {
+    background-color: #26f2f6; /* цвет заднего фона при наведении */
+  }
+}
+.books{
+  
+  margin: auto;
+  position: static;
+  width: 30%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  cursor: zoom-in;
+  
+}
+.books:focus {
+  position: fixed;
+  height: auto;
+    width: auto;
+  top: 50%;
+  left: 50%;
+  z-index: auto;
+  max-width: 100%;
+  max-height: 100%;
+  outline: none;
+  pointer-events: none;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-user-select: none; user-select: none;
+  animation: fadeIn 0.1s ease-in-out forwards;
+  
+
+}
+.books:hover {
+  width: 35%;
+    height: 65%;
+    -webkit-transform: zoom-out(180deg);
+    transform: zoom-out(180deg);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<html>
+
+<head>
+
+<title>Практическое задание</title>
+<h1>Всем привет!</h1>
+<p>На данной страничке у нас будет работать смена темы.</p>
+
+
+<link id="theme-style" rel="stylesheet" href="StyleLab5Light.css"> <!-- Стандартная светлая тема -->
+  <script>
+    function toggleTheme() {
+      var themeStyle = document.getElementById('theme-style');
+      
+      if (themeStyle.getAttribute('href') === 'StyleLab5Light.css') {
+        themeStyle.setAttribute('href', 'StyleLab5Dark.css'); // Переключение на темную тему
+      } else {
+        themeStyle.setAttribute('href', 'StyleLab5Light.css'); // Переключение на светлую тему
+      }
+    }
+  </script>
+</head>
+<body>
+<img src="Images/dog.jpg">
+<img src="Images/cat.jpg">
+<img src="Images/parrot.jpg">
+<img src="Images/rabbit.jpg">
+  
+  <h1>Смена темы</h1>
+  
+  <button onclick="toggleTheme()">Переключить тему</button>
+
+</body>
+</html>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
