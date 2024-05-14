@@ -35,8 +35,8 @@ background-size: cover;
     color: #ffffff;
     padding: 15px;
     border: 7px solid #15fd00;
-    height: 55%;
-    width: 45%;
+    height: 57%;
+    width: 55%;
     animation: skeW 1.5s forwards;
 }
 @keyframes skeW {
@@ -140,7 +140,7 @@ background-size: cover;
   li{
     font-size: 40px;
     font-weight: 400;
-    line-height: 70px;
+    line-height: 60px;
   }
   a {
     color: #3cff00;
@@ -225,7 +225,9 @@ background-size: cover;
   
   button {
     display: table;
-    font-family: "ＭＳ Ｐゴシック";
+    font-family: "Pixelify Sans", sans-serif;
+    font-smooth: never;
+    -webkit-font-smoothing : none;
     background-color: #00ff2294;
     border-color: #ffffff;
     color: #fff;
@@ -243,7 +245,9 @@ background-size: cover;
   }
 
   .theme-changer button{
-    font-family: "ＭＳ Ｐゴシック";
+  font-family: "Pixelify Sans", sans-serif;
+  font-smooth: never;
+  -webkit-font-smoothing : none;
     display: inline;
     background-color: #00ff2294;
     border-color: #ffffff;
