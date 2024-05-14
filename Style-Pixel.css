@@ -116,7 +116,7 @@ background-size: cover;
   }
   p {
     line-height: 1.6;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 400;
     
   }
@@ -133,19 +133,19 @@ background-size: cover;
   }
   ul {
     list-style-type: decimal;
-    font-size: 40px;
+    font-size: 25px;
     font-weight: 400;
      
   }
   li{
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 60px;
   }
   a {
     color: #3cff00;
     text-decoration: none;
-    font-size: 27px;
+    font-size: 25px;
     font-weight: 400;
     text-shadow: 1px 1px rgb(0, 0, 0);
     transition: .5s;
