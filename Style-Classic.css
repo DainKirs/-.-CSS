@@ -37,6 +37,7 @@ body {
   #showPanel:hover::after {
     opacity: 1;
   }
+  
   .panel {
     right: 0;
     display: none;
