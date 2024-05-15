@@ -146,6 +146,28 @@ opacity: 0;
       width: 40px;
       height: 40px;
       border: 0px;
+      position: relative;
+  
+    }
+    #showPanel::after {
+      content: attr(title);
+      width: 100px;
+      height: 40px;
+      position: absolute;
+      font-weight: 700;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding-top: 50%;
+      border-radius: 5px;
+      opacity: 0;
+      transition: opacity 0.5s;
+      margin-top: 100%;
+    }
+    
+    #showPanel:hover::after {
+      opacity: 1;
     }
     .panel {
       z-index: 9999;
