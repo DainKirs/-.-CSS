@@ -33,6 +33,7 @@ html {
   a:focus {
     border-bottom: 10px solid;
     background: #f00d0d;
+    border-radius: 10px 30px 10px 30px;
     
   }
   
