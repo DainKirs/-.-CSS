@@ -73,9 +73,9 @@ html {
   padding: 15px;
   border: 1px solid #00ff37;
   border-radius: 20px;
-  animation: zoomout 1s forwards;
+  animation: zoom-out 1s forwards;
 }
-@keyframes zoomout {
+@keyframes zoom-out {
   0% {
       opacity: 0;
       transform: scale(0.1);
