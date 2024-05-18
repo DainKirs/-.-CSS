@@ -453,7 +453,7 @@ textarea{
     /* фиксированное позиционирование */
     position: fixed;
     /* цвет фона */
-    background-color: #9f9f9f;
+    background-color: #9f9f9f74;
     /* расстояние от правого края окна браузера */
     right: 20px;
     /* расстояние от нижнего края окна браузера */
@@ -491,7 +491,7 @@ textarea{
   
   @media (hover: hover) and (pointer: fine) {
     .btn-up:hover {
-      background-color: #dfd80fa3; /* цвет заднего фона при наведении */
+      background-color: #dfd80f4c; /* цвет заднего фона при наведении */
     }
   }
   .books{
