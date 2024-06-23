@@ -37,8 +37,8 @@ html {
   margin-left: 93% ;
   background: url(Images/theme-icon.png) no-repeat center / contain; 
   border-radius: 100%;
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   position: relative;
   
 }
@@ -476,3 +476,8 @@ body.style{transition: all 1s ease;}
   
 
 }
+#info{
+  display: flex;
+  
+  padding-left: 85%;
+ }

@@ -23,8 +23,8 @@ background-size: cover;
   #showPanel{
     margin-left: 93% ;
     background: url(Images/color-pix.png) no-repeat center / contain; 
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     
     position: relative;
   
@@ -565,3 +565,8 @@ background-size: cover;
   
 
 }
+#info{
+  display: flex;
+  
+  padding-left: 85%;
+ }

@@ -12,8 +12,8 @@ body {
     margin-left: 93% ;
     background: url(Images/theme-icon.png) no-repeat center / contain; 
     border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     position: relative;
   
   }
@@ -36,6 +36,7 @@ body {
   
   #showPanel:hover::after {
     opacity: 1;
+    box-shadow: 0 0 30px #1270c3;
   }
   
   .panel {
@@ -487,3 +488,8 @@ body {
     
   
   }
+ #info{
+  display: flex;
+  color: blue;
+  padding-left: 85%;
+ }

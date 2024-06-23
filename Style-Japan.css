@@ -129,8 +129,8 @@ opacity: 0;
       margin-left: 93% ;
       background: url(Images/theme-icon.png) no-repeat center / contain; 
       border-radius: 100%;
-      width: 40px;
-      height: 40px;
+      width: 60px;
+      height: 60px;
       border: 0px;
       position: relative;
   
@@ -479,3 +479,8 @@ figure img:focus {
   
 
 }
+#info{
+  display: flex;
+  
+  padding-left: 85%;
+ }

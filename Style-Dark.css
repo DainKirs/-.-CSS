@@ -49,13 +49,16 @@ body {
   #showPanel{
     margin-left: 93% ;
     background: url(Images/theme-icon.png) no-repeat center / contain; 
-    border-radius: 100%;
-    width: 40px;
-    height: 40px;
+    border-radius: 90%;
+    border-width: 60px;
+    width: 60px;
+    height: 60px;
+    
     
     position: relative;
   
   }
+  
   #showPanel::after {
     content: attr(title);
     width: 100px;
@@ -71,10 +74,13 @@ body {
     opacity: 0;
     transition: opacity 0.5s;
     margin-top: 100%;
+    
   }
   
   #showPanel:hover::after {
     opacity: 1;
+    box-shadow: 0 0 30px #b9cf16;
+    
   }
   .panel {
     right: 0;
@@ -496,4 +502,8 @@ body {
     
   
   }
-  
+  #info{
+    display: flex;
+    color: rgb(213, 213, 8);
+    padding-left: 85%;
+   }
